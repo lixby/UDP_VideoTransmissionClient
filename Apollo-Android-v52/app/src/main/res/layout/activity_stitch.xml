@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skylight.apollo.StitchActivity">
+
+    <com.kandaovr.sdk.view.RenderView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:keepScreenOn="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#88000000">
+
+        <Button
+            android:id="@+id/startStream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stitch_start_stream"/>
+
+        <Button
+            android:id="@+id/stopStream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stitch_stop_stream"/>
+
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stitch_record"/>
+
+        <Button
+            android:id="@+id/streamButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stitch_stream"/>
+
+     </LinearLayout>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#32CD32"
+        android:layout_below="@+id/label"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/postionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/label"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:visibility="invisible"
+        android:layout_marginRight="8dp">
+
+        <Button
+            android:id="@+id/frontCameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:text="@string/stitch_front_camera"/>
+
+        <Button
+            android:id="@+id/full360Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/stitch_screenshot"/>
+
+        <Button
+            android:id="@+id/rearCameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:text="@string/stitch_rear_camera"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/orientationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/postionLayout"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:visibility="invisible"
+        android:layout_marginRight="8dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:text="90°"
+            android:tag="90"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="180°"
+            android:tag="180"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:text="270°"
+            android:tag="270"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@id/orientationLayout"
+        android:id="@+id/adjustCalibrationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        android:text="Start Auto Calibration"/>
+
+
+
+</RelativeLayout>

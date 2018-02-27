@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Apollo v52</string>
+
+    <string name="activity_stitch">Stitching</string>
+    <string name="activity_browse">Browse</string>
+    <string name="activity_replay">Replay</string>
+
+    <string name="button_stitch">Stitch</string>
+    <string name="button_replay">Replay</string>
+
+    <string name="stitch_browse">Browse</string>
+    <string name="stitch_capture">Capture</string>
+    <string name="stitch_record">Record</string>
+    <string name="stitch_stream">Stream</string>
+    <string name="stitch_record_stop">Stop</string>
+
+    <string name="stitch_start_stream">StartVideo</string>
+    <string name="stitch_stop_stream">StopVideo</string>
+
+    <string name="stitch_front_camera">Front 180</string>
+    <string name="stitch_rear_camera">Rear 180</string>
+    <string name="stitch_screenshot">Full 360</string>
+
+    <string name="replay_mode_hand">Manual</string>
+    <string name="replay_mode_gyro">Sensor</string>
+
+    <string name="replay_projection_fisheye">Fisheye</string>
+    <string name="replay_projection_perspective">Perspective</string>
+    <string name="replay_projection_planet">Planet</string>
+
+    <string name="replay_capture">Capture</string>
+
+
+</resources>
